@@ -1,0 +1,133 @@
+.number-check{
+    width: 100%;
+min-height: 382px;
+background: #FFFFFF;
+padding-top: 88px;
+
+
+
+}
+
+.number-check-forma{
+    display: flex;
+    align-items: center;
+   width: 100%;
+}
+.number-check{
+
+
+    &-title{
+        font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000000;
+    }
+
+    &-inputs{
+        display: flex;
+        align-items:  flex-end;
+        width: 100%;
+        padding: 60px 0  50px 0;
+
+        @include for-tablet{
+            display: block;
+        }
+
+    }
+
+    &-input{
+        border: none;
+        border-radius: none;
+    border-bottom: 1px solid #000000;
+    background-color: none;
+    width: 320px;
+    margin-right: 20px;
+    padding: 16px 0;
+  
+    outline: none;
+    
+    
+    @include for-ipad{
+        width: 200px;
+    }
+    @include for-tablet{
+        width: 250px;
+    }
+    
+    }
+    &-input::placeholder{
+        font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: rgba(44, 2, 2, 0.5);
+    
+    }
+
+   &-btn{
+    font-weight: 700;
+font-size: 18px;
+line-height: 150%;
+color: #000000;
+padding: 14px 20px;
+background-color: transparent;
+transition: 0.5s ease;
+border: 2px solid #262525;
+
+@include for-tablet{
+    font-weight: 700;
+font-size: 14px;
+line-height: 130%;
+color: #000000;
+margin-top: 40px;
+}
+
+
+   }
+   &-btn:hover{
+    background-color: transparent;
+    color: green;
+    border: 2px solid green ;
+   }
+   &-btn:focus{
+    background-color: transparent;
+    color: rgb(128, 0, 0);
+    border: 2px solid rgb(128, 0, 0) ;
+   }
+   &-checkbox1{
+    display: none;
+    margin-top: 40px;
+
+    @include for-tablet{
+        display: block;
+    }
+}
+   
+   &-span1{
+    font-weight: 400;
+font-size: 14px;
+line-height: 130%;
+color: #000000;
+display: none;
+
+@include for-tablet{
+    display: inline;
+}
+}
+
+    &-checkbox{
+
+        @include for-tablet{
+            display: none;
+        }
+    }
+    &-span{
+        font-weight: 400;
+font-size: 14px;
+line-height: 130%;
+color: #000000;
+
+@include for-tablet{
+    display: none;
+}
+    }
+}

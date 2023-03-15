@@ -1,0 +1,77 @@
+.read-books__about{
+    background-color: #fff;
+
+    &-title{
+        padding-top: 50px;
+        font-weight: 500;
+font-size: 36px;
+line-height: 150%;
+color: #000000;
+    }
+}
+
+
+.for-desktop{
+    @include for-ipad{
+        display: none;
+    }
+}
+
+.for-ipad{
+    display: none;
+
+    @include for-ipad{
+        display: block;
+    }
+
+    @include for-tablet{
+        display: none;
+    }
+}
+
+.for-tablet{
+    display: none;
+
+
+    @include for-tablet{
+        display: block;
+    }
+
+    @include for-mobile{
+        display: none;
+    }
+
+}
+
+.for-mobile{
+    display: none;
+
+    @include for-mobile{
+        display: block;
+    }
+}
+
+
+.img-div{
+    align-items: center;
+    display: flex;
+    height: 161px;
+    justify-content: center;
+    position: relative;
+    transition: 0.5s ease;
+}
+.before__img{
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+}
+
+.image{
+    display: flex;
+    margin: auto;
+    transition: 0.5s ease;
+   
+}
+.image:hover{
+    transform: scale(1.1);
+}

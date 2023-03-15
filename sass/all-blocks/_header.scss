@@ -1,0 +1,263 @@
+// body{
+//     background-color: #036c2a;
+// }
+ 
+
+  .navb{
+    background-color: #FFFFFF;
+  }
+  .navbaraa{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   justify-content: space-between;
+    &__bar{
+        display: flex;    
+        align-items: center;
+        column-gap: 50px;
+
+        @include for-tablet{
+            display: flex;    
+            align-items: center;
+            column-gap: 10px;
+        }
+
+        @include for-mobile{
+            flex-direction: column;
+      row-gap: 10px;
+      align-items: flex-start;
+      background-color: #FFFFFF;
+      border:1px solid grey;
+      border-radius: 10px;
+      padding: 7px 30px 7px 5px;
+      transition: 0.5s ease;
+      position: absolute;
+      right: 20px;
+      top: 40px;
+      transform: translateY(-400px);
+        }
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+
+        @include for-tablet{
+            display: flex;
+      align-items: center;
+      column-gap: 10px;
+        }
+
+        &-item{
+            cursor: pointer;
+        }
+        &-link{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: #000000;
+            transition: 0.5s ease;
+        }
+    }
+  }
+  .navbaraa__bar.active{
+    transform: translateY(0);
+    margin-top: 10px;
+  }
+  .contact__btn.actives{
+    transform: rotate(180deg);
+  }
+  
+ 
+
+
+  
+  .contact__about{
+    display: none;
+
+    @include for-mobile{
+        display: block;
+    display: flex;
+    align-items: center;
+    }
+  }
+  .contact__text{
+    font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+color: #000000;
+cursor: pointer;
+
+@include for-tablet{
+    font-weight: 700;
+font-size: 24px;
+line-height: 130%;
+color: #000000;
+}
+  }
+  .contact__btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    @include for-mobile{
+        margin-left: 10px;
+        transition: 0.5s ease;
+    }
+  }
+
+.hero{
+  background: $bg_color;
+  width: 100%;
+  min-height: 500px;
+}
+.hearor{
+  display: flex;
+  align-items: center;
+  padding: 88px 0;
+  justify-content: space-between;
+
+ 
+}
+.hearor__about{
+  max-width: 628px;
+
+  @include for-mobile{
+    text-align: center;
+  }
+
+  &-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130%;
+    color: #000000;
+    padding-bottom: 32px;
+
+    @include for-tablet{
+        font-weight: 700;
+font-size: 24px;
+line-height: 130%;
+color: #000000;
+    }
+    @include for-mobile{
+        padding: 0 24px 32px 24px;
+    }
+
+ 
+  }
+
+  &-image{
+    display: none;
+
+    @include for-mobile{
+        display: block;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+  }
+  &-text{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #000000;
+    padding-bottom: 40px;
+
+    @include for-tablet{
+        font-weight: 400;
+font-size: 18px;
+line-height: 130%;
+color: #000000;
+    }
+    @include for-mobile{
+        padding: 24px;
+    }
+    
+  }
+
+  &-buttons{
+    display: flex;
+    column-gap: 24px;
+
+    @include for-mobile{
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+        
+    }
+  }
+  &-btn{
+    background-color:  #EE1B24;
+    padding: 15px 25px;
+    border: 2px solid transparent;
+  
+    font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+
+  @include for-ipad{
+    font-size: 14px;
+  }
+  @include for-tablet{
+    font-size: 12px;
+  }
+ 
+  }
+  &-btn:hover{
+    background-color: $bg_color;
+    color:  #161A2B;
+    border: 2px solid #161A2B;
+  }
+  &-btn:focus{
+    background-color: $bg_color;
+    color: #EE1B24;
+    border: 2px solid #EE1B24;
+  }
+  &-btnn{
+    background-color: #FFFFFF;
+  padding: 15px 25px;
+  border: 2px solid #161A2B;
+  font-weight: 700;
+font-size: 18px;
+line-height: 130%;
+color: #161A2B;
+cursor: pointer;
+transition: 0.5s ease-in;
+
+@include for-ipad{
+    font-size: 14px;
+  }
+@include for-tablet{
+    font-size: 12px;
+  }
+
+  }
+  &-btnn:hover{
+    background-color: #F0F0F0;
+  color:  #036c2a;
+  border: 2px solid #036c2a;
+  }
+  &-btnn:focus{
+    background-color: #F0F0F0;
+    color: #EE1B24;
+    border: 2px solid #EE1B24;
+  }
+}
+
+
+.hearor__image{
+  max-width: 436px;
+
+  @include for-ipad{
+    max-width: 336px;
+  }
+  @include for-tablet{
+    max-width: 232px;
+  }
+  @include for-mobile{
+    display: none;
+  }
+}
+

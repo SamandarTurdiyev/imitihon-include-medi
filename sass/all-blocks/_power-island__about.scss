@@ -1,0 +1,108 @@
+.power--island{
+    background: $bg_color;
+    width: 100%;
+    min-height: 800px;
+}
+.power-island{
+    background: $bg_color;
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__title{
+        font-weight: 500;
+font-size: 36px;
+line-height: 150%;
+padding-top: 88px;
+padding-bottom: 48px;
+color: #000000;
+
+
+        @include for-mobile{
+            font-weight: 500;
+font-size: 24px;
+line-height: 150%;
+
+color: #000000;
+        }
+    }
+
+    &__img{
+        width: 88px;
+height: 88px;
+
+
+@include for-mobile{
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+    }
+}
+.power-island__about{
+background-color: #fff ;
+// max-width: 576px;
+min-height: 340px;
+margin: 20px;
+position: relative;
+
+    @include for-mobile{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    &-title{
+        padding-left: 32px;
+        font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: #000000;
+
+    @include for-ipad{
+        font-weight: 700;
+font-size: 18px;
+line-height: 130%;
+color: #000000;
+
+    }
+
+    @include for-mobile{
+        font-weight: 700;
+font-size: 14px;
+line-height: 130%;
+color: #000000;
+    }
+    }
+
+    &-text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #000000;
+        padding: 16px 44px 80px 40px;
+        overflow-y: hidden;
+
+        @include for-tablet{
+            font-weight: 400;
+font-size: 24px;
+line-height: 130%;
+color: #000000;
+        }
+
+       
+    }
+
+
+
+    &-line{
+        position: absolute;
+        width: 136px;
+        height: 4px;
+        background: #EE1B24;;
+        right: 0;
+        bottom: 0;
+    }
+}

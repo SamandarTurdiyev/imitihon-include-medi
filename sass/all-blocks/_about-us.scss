@@ -1,0 +1,148 @@
+.section__about{
+    width: 100%;
+    background-color:  #161A2B;
+    display: flex;
+
+}
+
+.aaaaa{
+    display: flex;
+}
+.about{
+    display: flex;
+    padding: 0;
+
+    @include for-mobile{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.about__us{
+    background-color:  #161A2B;
+    padding: 80px 100px 124px 0;
+    border-bottom: 8px solid red;
+    max-width: 620px;
+    min-height: 582px; 
+
+  @include for-ipad{
+    padding: 80px 17px 129px 0;
+  }
+  @include for-tablet{
+    padding: 144px 49px 201px 0;
+  }
+  @include for-mobile{
+    padding: 40px 24px 40px 0;
+    border-bottom: none;
+  }
+    &-title{
+        font-weight: 500;
+font-size: 36px;
+line-height: 150%;
+color: #FFFFFF;
+padding-bottom: 48px;
+
+        @include for-mobile{
+            font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+color: #FFFFFF;
+        }
+
+    }
+    &-text{
+        font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+color: #FFFFFF;
+padding-bottom: 24px;
+
+@include for-mobile{
+    font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+color: #FFFFFF;
+}
+    }
+
+    &-li{
+        font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+color: #FFFFFF;
+
+@include for-mobile{
+    font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+color: #FFFFFF;
+}
+    }
+
+
+}
+
+.right__part{
+    background-image: url('../../images/PowerPlaner-bg.png');
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &-line{
+        border-bottom: 8px solid red;
+        width: 50%;
+        display: none;
+
+        @include for-mobile{
+            display: block;
+        }
+    }
+    
+
+&-cards{
+   
+    justify-content: center;
+    padding: 74px 0;
+
+
+
+
+    
+
+}
+    &-carda{
+        background-color: #161A2B;
+        width: 208px;
+        min-height: 208px;
+        position: relative;
+        padding: 24px 0 0 32px;
+        margin: 8px;
+
+        @include for-mobile{
+            width: 280px;
+        }
+
+        &-line{
+            position: absolute;
+            width: 4px;
+            height: 104px;
+            background: #EE1B24;;
+            left: 25px;
+            top: 0;
+        }
+    }
+
+}
+.carda__number{
+    font-weight: 700;
+font-size: 36px;
+line-height: 150%;
+color: #FFFFFF;
+}
+.carda__text{
+    font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+color: #FFFFFF;
+}
+
+
